@@ -105,11 +105,17 @@ Change a file in `hr-backend/src/config/db.js`:
 
 ## Screenshots
 
-*Add screenshots here to showcase:*
+### Main Page
+![Main](main.png)
 
-* Candidate Application Form
-* HR Dashboard
-* Approve/Reject Interface
+### HR Login
+![HR Login](hr-login.png)
+
+### Application Form
+![Form](form.png)
+
+### Track Application
+![Track Application](track-application.png)
 
 ---
 
