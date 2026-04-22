@@ -1,0 +1,152 @@
+.apply-now-container {
+  min-width: 50rem;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.505);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.apply-now-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.apply-now-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.apply-now-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+.apply-now-form input,
+.apply-now-form textarea {
+  padding: 0.75rem;
+  margin-top: 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.apply-now-form input::placeholder,
+.apply-now-form textarea::placeholder {
+  color: #ddd;
+}
+
+.apply-now-form input:focus,
+.apply-now-form textarea:focus {
+  border-color: #ffffff;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.apply-now-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.apply-now-form select {
+  padding: 0.75rem;
+  margin-top: 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.apply-now-form select option {
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.apply-now-form select:focus {
+  border-color: #ffffff;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.apply-now-form select option:hover,
+.apply-now-form select option:checked {
+  background-color: #555;
+  color: #fff;
+}
+
+.apply-now-form button {
+  padding: 0.9rem;
+  background-color: #404749;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid #555;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(71, 86, 91, 0.5);
+  transition: all 0.3s ease;
+}
+
+.file-upload-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.file-upload-wrapper input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.file-upload-wrapper span {
+  display: inline-block;
+  background-color: #acacac24;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #acacac24;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload-wrapper span:hover {
+  background-color: #4f5557;
+}
+
+.apply-now-form button:hover {
+  background-color: #485357;
+  box-shadow: 0 0 15px rgba(59, 62, 63, 0.7);
+}
+
+
+.choose-file-class {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,104 @@
+/* Overlay */
+.view-candidate-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Card */
+.view-candidate-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 650px;
+  width: 95%;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+/* Details */
+.candidate-details p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.candidate-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.candidate-details a:hover {
+  text-decoration: underline;
+}
+
+.view-resume-btn {
+  background-color: #007bff; /* light blue */
+  color: white;
+  border: none;
+  margin-left: 5px;
+  padding: 3px 8px; /* smaller size */
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.view-resume-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Action Buttons */
+.candidate-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.approve-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.approve-btn:hover {
+  background-color: #218838;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+}

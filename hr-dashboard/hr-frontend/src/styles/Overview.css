@@ -1,0 +1,108 @@
+.overview-container {
+  padding: 1.5rem;
+}
+
+.metrics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.metrics-container a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.metric-card {
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #d2d2d2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.metric-card:hover,
+.metric-card:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.metric-card h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.metric-icon {
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+  color: #007bff;
+}
+
+.metric-card span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.activity-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.activity-table th,
+.activity-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.activity-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.activity-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.view-all {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}

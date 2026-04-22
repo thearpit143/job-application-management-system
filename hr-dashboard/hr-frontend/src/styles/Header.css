@@ -1,0 +1,122 @@
+.custom-header {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  min-height: 50px;
+  max-width: 100%;
+  padding: 0 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.facebook:hover {
+  color: #0091ff;
+  transform: translateY(-2px);
+}
+
+.linkdin:hover {
+  color: #0091ff;
+  transform: translateY(-2px);
+}
+
+.instagram:hover {
+  color: #e62525;
+  transform: translateY(-2px);
+}
+
+
+.github:hover {
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+
+.button-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.hr-login-button {
+  all: unset;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #ffcc00;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .button-container {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
