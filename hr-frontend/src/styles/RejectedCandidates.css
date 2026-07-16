@@ -1,0 +1,36 @@
+.rejected-container {
+  padding: 20px;
+  background-color: #fff5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.1);
+}
+
+.rejected-container h2 {
+  margin-bottom: 20px;
+  color: #cc0000;
+}
+
+.rejected-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rejected-table th,
+.rejected-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: left;
+}
+
+.rejected-table th {
+  background-color: #ffe5e5;
+  color: #990000;
+}
+
+.rejected-table tr:nth-child(even) {
+  background-color: #fff0f0;
+}
+
+.rejected-table tr:hover {
+  background-color: #ffe0e0;
+}

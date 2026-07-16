@@ -1,78 +1,115 @@
 # Job Application Management System
 
-A full-stack web application designed to streamline the job application process with role-based access for Candidates and HR.
+A full-stack Job Application Management System that simplifies the hiring process by providing separate portals for **Candidates** and **HR**. Candidates can apply for jobs, upload resumes, and track their applications, while HR can review applications and approve or reject candidates.
 
 ---
 
 ## Features
 
-### Candidate
+### Candidate Portal
 
-* Apply for jobs through a detailed form
-* Upload resume (PDF supported)
-* Provide portfolio, GitHub, LinkedIn, and other details
+- Apply for jobs through an online application form
+- Upload resume (PDF)
+- Add GitHub, LinkedIn and portfolio links
+- Track application status
+- View application details
 
-### HR Dashboard
+### HR Portal
 
-* Secure login for HR users
-* View all applications
-* Approve or reject candidates
-* Organized data handling for efficient review
+- Secure HR login using JWT authentication
+- View all job applications
+- View complete candidate profiles
+- Approve or reject applications
+- Dashboard for managing candidates
 
-### System
+### General Features
 
-* Role-based functionality (Candidate & HR)
-* Full CRUD operations
-* Resume storage and retrieval
-* Clean UI with responsive design
+- Role-based functionality
+- Resume upload and storage
+- REST API architecture
+- Responsive user interface
+- MySQL database integration
 
 ---
 
 ## Tech Stack
 
-* **Frontend:** React (Vite)
-* **Backend:** Node.js, Express.js
-* **Database:** PostgreSQL
-* **Other Tools:** Multer (file upload), REST APIs
+### Frontend
+
+- React (Vite)
+- React Router
+- Redux Toolkit
+- Axios
+- Bootstrap
+- React Toastify
+- React Icons
+
+### Backend
+
+- Node.js
+- Express.js
+- JWT Authentication
+- Multer
+- MySQL
 
 ---
 
 ## Project Structure
 
 ```
-hr-dashboard/
+job-application-management-system
 │
-├── hr-frontend/     # React frontend
-├── hr-backend/      # Node.js + Express backend
+├── hr-backend/
+├── hr-frontend/
+├── screenshots
 └── README.md
 ```
 
 ---
 
-## Setup Instructions
+## Installation
 
-### 🔹 1. Clone the Repository
+### 1. Clone the repository
 
-```
+```bash
 git clone https://github.com/thearpit143/job-application-management-system.git
 cd job-application-management-system
 ```
 
 ---
 
-### 🔹 2. Backend Setup
+### 2. Backend Setup
 
-```
+```bash
 cd hr-backend
 npm install
+```
+
+Create a `.env` file inside **hr-backend**.
+
+Example:
+
+```env
+MYSQL_HOST=localhost
+MYSQL_USER=your_mysql_username
+MYSQL_PASSWORD=your_mysql_password
+MYSQL_DATABASE=hiring_portal
+MYSQL_PORT=3306
+
+JWT_SECRET=your_secret_key
+```
+
+Start the backend server:
+
+```bash
 npm start
 ```
 
 ---
 
-### 🔹 3. Frontend Setup
+### 3. Frontend Setup
 
-```
+```bash
 cd hr-frontend
 npm install
 npm run dev
@@ -82,67 +119,105 @@ npm run dev
 
 ## Database Setup
 
-* Install PostgreSQL
-* Create a new database
-* Update database connection settings in backend config file (`db.js` or `.env`)
-* Start backend server
+1. Install MySQL.
+2. Create a database named:
+
+```sql
+hiring_portal
+```
+
+3. Import the provided `schema.sql` file.
+
+4. Update your `.env` file with your MySQL credentials.
 
 ---
 
-## Environment Variables (Recommended)
+## API Authentication
 
-Change a file in `hr-backend/src/config/db.js`:
-
-```
-  user: 'postgres',
-  host: 'localhost',
-  database: 'hiring_portal',
-  password: 'your password',
-  port: 5432,
-```
+The HR dashboard uses JWT authentication. Configure your own secret key inside the `.env` file before running the backend.
 
 ---
 
 ## Screenshots
 
-### Main Page
-![Main](main.png)
+### Home Page
+
+![Home](screenshots/home.png)
+
+---
 
 ### HR Login
-![HR Login](hr-login.png)
 
-### Application Form
-![Form](form.png)
+![HR Login](screenshots/hr-login-page.png)
+
+---
+
+### Apply for Job
+
+![Apply](screenshots/apply.png)
+
+---
 
 ### Track Application
-![Track Application](track-application.png)
+
+![Track](screenshots/track-application.png)
 
 ---
 
-## Future Enhancements
+### HR Dashboard
 
-* JWT-based authentication & authorization
-* Role-based access control improvements
-* Email notifications for application status
-* Pagination and search filters
-* Deployment (Frontend + Backend hosting)
+![HR Dashboard](screenshots/hr-home.png)
 
 ---
 
-## Note
+### Candidate Profile
 
-Database schema is not included in this repository.
-To run the project, configure your own PostgreSQL database and update the backend connection settings.
+![Candidate Profile](screenshots/candidate-profile.png)
+
+---
+
+### Approved Candidates
+
+![Approved](screenshots/approved-candidates.png)
+
+---
+
+### Rejected Candidates
+
+![Rejected](screenshots/rejected-candidate.png)
+
+---
+
+## Future Improvements
+
+- Email notifications
+- Search and filtering
+- Pagination
+- Multiple HR roles
+- Interview scheduling
+- Docker support
+- Deployment using Render/Vercel
+- CI/CD pipeline
+
+---
+
+## Contributing
+
+Contributions are welcome. Feel free to fork the repository and submit a pull request.
 
 ---
 
 ## Author
 
 **Arpit Chauhan**
-B.Tech CSE
+
+B.Tech Computer Science & Engineering
+
+GitHub: https://github.com/thearpit143
+
 
 ---
 
 ## Support
 
-If you like this project, consider giving it a star on GitHub!
+If you found this project helpful, consider giving it a ⭐ on GitHub.

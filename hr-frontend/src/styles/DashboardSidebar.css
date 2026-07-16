@@ -1,0 +1,34 @@
+.sidebar {
+  max-width: 200px;
+  height: 100%;
+  background-color: #111827;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d1d5db;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+  background-color: #374151;
+  color: white;
+}
+
+.sidebar-nav svg {
+  font-size: 18px;
+}
