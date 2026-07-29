@@ -1,5 +1,6 @@
 # Dependencies
-node_modules/
+hr-frontend/node_modules/
+hr-backend/node_modules/
 
 # Environment variables
 .env
@@ -19,7 +20,7 @@ dist/
 build/
 
 # Vite cache
-.vite/
+hr-frontend/.vite/
 
 # Editor directories and files
 .vscode/*
